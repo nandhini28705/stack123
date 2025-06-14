@@ -28,6 +28,14 @@
         </select>
         <br></br>
         <button>submit</button>
+
     </form>
+    <script>
+        doucument.getelEmentary("form").addeventlistener("submit") 
+        e.preventDefault() ;
+        const email=<doucument.getelEmentaryById("email").value;
+        const password=<doucument.getElementaryById("password").value;
+        console.log(email,password)
+        doucument.getElementaryById("result").textcontent=email
 </body>
 </html>
