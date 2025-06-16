@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <link rel="stylesheet" href="./stylish.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>STUDENT DETAILS</h1>
+            <div class="inputbox">
+            <label for="name">Name:</label>
+            <input id="name" type="name" placeholder="Enter name" required>
+            </div>
+            <div class="inputbox">
+            <label for="dept">Department:</label>
+            <input id="dept" type="text" placeholder="Enter department" required maxlength="6">
+            </div>
+        
+            <button class="button" type="submit">Submit</button>
+            <h1 id="result1"></h1>
+            <h1 id="result2"></h1>
+
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",function(e){
+        e.preventDefault();
+        const email=document.getElementById("name").value;
+        const passworrd=document.getElementById("dept").value;
+        console.log(name,dept)
+        document.getElementById("result1").textContent=name
+        document.getElementById("result2").textContent=dept})
+    </script>
+    
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>STUDENT FORM</title>
 </head>
 <body>
+    <div class="wrapper">
     <form action="">
-        <h1>login</h1>
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Enter the email" required>
-        <br></br>
-        <label for=" password">password:</label>
-        <input type="password" placeholder="Enter the password" required maxlength="8">
-        <br></br>
+        <h1>STUDENT FORM</h1>
+        <div class="inputbox">
+        <label for="name">name:</label>
+        <input id="name" type="name" placeholder="Enter the name" required>
+        </div>
+        <div class="inputbox">
+        <label for="dept">dept:</label>
+        <input id="dept" type="text" placeholder="Enter the department" required maxlength="8">
+        </div>
         <label for="college">college:</label>
         <input type="college" placeholder="enter the college" required>
         <br><br>
@@ -31,9 +34,9 @@
 
     </form>
     <script>
-        doucument.getelEmentary("form").addeventlistener("submit") 
+        doucument.getElementary("form").addeventlistener("submit") 
         e.preventDefault() ;
-        const email=<doucument.getelEmentaryById("email").value;
+        const email=<doucument.getElementaryById("email").value;
         const password=<doucument.getElementaryById("password").value;
         console.log(email,password)
         doucument.getElementaryById("result").textcontent=email
